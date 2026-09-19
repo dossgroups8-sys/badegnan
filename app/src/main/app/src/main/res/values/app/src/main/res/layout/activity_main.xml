@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F5EE">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F5EE"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:contentDescription="BADEGNAN OS — Centre de commande" />
+
+    <LinearLayout
+        android:id="@+id/loadingOverl
