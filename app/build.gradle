@@ -1,0 +1,19 @@
+plugins { id 'com.android.application' }
+android {
+ namespace 'com.badegnan.os'
+ compileSdk 35
+ defaultConfig { applicationId 'com.badegnan.os'; minSdk 23; targetSdk 35; versionCode 36; versionName '3.7.0' }
+ compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+ signingConfigs {
+   badegnan {
+     storeFile file('badegnan-release.keystore')
+     storePassword 'badegnan2026'
+     keyAlias 'badegnan'
+     keyPassword 'badegnan2026'
+   }
+ }
+ buildTypes {
+   release { minifyEnabled false; shrinkResources false; proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'; signingConfig signingConfigs.badegnan }
+   debug { signingConfig signingConfigs.badegnan }
+ }
+}
