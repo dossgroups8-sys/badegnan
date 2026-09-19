@@ -1,0 +1,30 @@
+# Android / Gradle
+.gradle/
+build/
+*/build/
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+.externalNativeBuild/
+.cxx/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Signing keys / secrets
+*.jks
+*.keystore
+keystore.properties
+
+# Exception : clé de signature stable du projet, doit être versionnée
+# pour que chaque build (local ou GitHub Actions) produise la même
+# signature — sinon Android force une désinstallation à chaque mise
+# à jour et EFFACE TOUTES LES DONNÉES de l'application.
+!app/badegnan-release.keystore
+
+# Generated APK/AAB
+*.apk
+*.aab
