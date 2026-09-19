@@ -1,0 +1,10 @@
+{
+  "name": "BADEGNAN OS — Centre de Commande Pro",
+  "short_name": "BADEGNAN OS",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f7f5ee",
+  "theme_color": "#131f1a",
+  "lang": "fr",
+  "orientation": "portrait"
+}
